@@ -1,8 +1,9 @@
 variable "project_name" {
-  type = string
+  default = "trfm-gcp-prj-001"
+  type        = string
 }
 
-variable "folder_id" {
-  type = number
-  default = 803436143381
+variable "subfolder_id" {
+  default = "694859165773"
+  type        = string
 }

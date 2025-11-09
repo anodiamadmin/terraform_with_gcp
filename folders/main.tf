@@ -1,9 +1,9 @@
-resource "google_folder" "tfrm_test_folder" {
-  display_name = "tfrm_test"
-  parent       = "organizations/75464482940"
+resource "google_folder" "experiments" {
+  display_name = "${var.folder_name}"
+  parent       = "organizations/${var.org_id}"
 }
 
-resource "google_folder" "tfrm_sub_folder" {
-  display_name = "subfolder_test"
-  parent       = "folders/367288012271"
+resource "google_folder" "terraform" {
+  display_name = "${var.subfolder_name}"
+  parent       = "folders/${var.folder_id}"
 }

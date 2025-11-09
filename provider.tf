@@ -1,3 +1,3 @@
 provider "google" {
-  credentials = file("key-tfrm-sa.json")
+  credentials = file("key-sa-admin.json")
 }
